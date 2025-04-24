@@ -5,9 +5,14 @@ public class Main {
         System.out.println("Hello and welcome!");
         int vymera=47;
         int cenaZaMetr=545;
-        String nazev="Sad Pálava";
+        String nazev="Sad Pálava1";
         int cena=vymera*cenaZaMetr;
-        System.out.println("Cena pozemku " + nazev + " je " + cena + " Kč");
+        Pozemek sadPalava =
+                new Pozemek(250,200,"Sad Pálava");
+        Pozemek dumBrno =
+                new Pozemek(140,280,"Dům Brno");
+                        System.out.println("Cena pozemku " + nazev + " je " + cena + " Kč");
+        System.out.println(sadPalava.getNazev() + " má výměr " + sadPalava.getVymera());
 
 
     }
